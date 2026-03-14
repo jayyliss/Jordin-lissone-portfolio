@@ -5,8 +5,6 @@ export interface Experience {
   period: string;
   description: string;
   highlights: string[];
-  icon: string;
-  color: string;
 }
 
 export interface Education {
@@ -15,7 +13,6 @@ export interface Education {
   field: string;
   school: string;
   year: string;
-  color: string;
 }
 
 export interface Certification {
@@ -30,48 +27,32 @@ export interface SkillCategory {
   id: string;
   title: string;
   skills: string[];
-  color: string;
-}
-
-export interface StatItem {
-  label: string;
-  value: string;
-  suffix?: string;
 }
 
 export const SITE_CONFIG = {
   name: "Jordin Lissone",
   credentials: "M.S.",
   headline: "Cyber Risk & Regulatory | Data Risk & Privacy",
-  tagline: "Securing the digital frontier \u2014 one risk at a time.",
   location: "New York / Connecticut",
   linkedin: "https://www.linkedin.com/in/jordinlissone/",
   email: "contact@jordinlissone.com",
 } as const;
 
 export const NAV_LINKS = [
-  { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
   { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
-export const STATS: StatItem[] = [
-  { label: "Years of Experience", value: "4", suffix: "+" },
-  { label: "Certifications", value: "3" },
-  { label: "Industries Served", value: "5", suffix: "+" },
-  { label: "States Licensed", value: "2" },
-];
-
 export const EXPERIENCES: Experience[] = [
   {
     id: "pwc",
     company: "PwC",
-    role: "Cyber Risk & Regulatory Associate \u2014 Data Risk & Privacy",
-    period: "2022 \u2013 Present",
+    role: "Cyber Risk & Regulatory Associate -- Data Risk & Privacy",
+    period: "2022 -- Present",
     description:
-      "Advising Fortune 500 clients on cybersecurity strategy, data privacy compliance, and regulatory risk management within one of the Big Four\u2019s leading practices.",
+      "Advising Fortune 500 clients on cybersecurity strategy, data privacy compliance, and regulatory risk management within one of the Big Four's leading practices.",
     highlights: [
       "Lead data risk assessments and privacy impact analyses for enterprise clients across financial services, healthcare, and technology sectors",
       "Develop and implement cybersecurity frameworks aligned with NIST, ISO 27001, GDPR, and CCPA regulatory requirements",
@@ -79,14 +60,12 @@ export const EXPERIENCES: Experience[] = [
       "Present findings and strategic recommendations to C-suite executives and board-level stakeholders",
       "Mentor junior analysts on privacy program maturity models and regulatory landscape navigation",
     ],
-    icon: "P",
-    color: "#D93F0B",
   },
   {
     id: "toyota",
     company: "Toyota Connected North America",
     role: "Senior Product Manager",
-    period: "2021 \u2013 2022",
+    period: "2021 -- 2022",
     description:
       "Drove product strategy for connected vehicle technology, bridging cybersecurity expertise with innovative automotive solutions at scale.",
     highlights: [
@@ -96,14 +75,12 @@ export const EXPERIENCES: Experience[] = [
       "Transitioned from contractor to full-time, recognized for exceptional strategic impact and cross-team leadership",
       "Applied cybersecurity principles to evaluate and strengthen connected vehicle data privacy posture",
     ],
-    icon: "T",
-    color: "#EB0A1E",
   },
   {
     id: "eden",
     company: "Eden Data",
     role: "Security Analyst",
-    period: "2020 \u2013 2021",
+    period: "2020 -- 2021",
     description:
       "Built a strong cybersecurity foundation performing security assessments and implementing protective measures for diverse client environments.",
     highlights: [
@@ -112,8 +89,6 @@ export const EXPERIENCES: Experience[] = [
       "Monitored security events and triaged incidents using SIEM platforms and threat intelligence feeds",
       "Developed security documentation including policies, procedures, and incident response playbooks",
     ],
-    icon: "E",
-    color: "#10B981",
   },
 ];
 
@@ -124,7 +99,6 @@ export const EDUCATION: Education[] = [
     field: "Management Information Systems",
     school: "SUNY Albany",
     year: "2022",
-    color: "#7C3AED",
   },
   {
     id: "bs",
@@ -132,7 +106,6 @@ export const EDUCATION: Education[] = [
     field: "Cyber Security",
     school: "SUNY Albany",
     year: "2021",
-    color: "#00D4FF",
   },
 ];
 
@@ -173,7 +146,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       "Penetration Testing",
       "Security Architecture",
     ],
-    color: "#00D4FF",
   },
   {
     id: "compliance",
@@ -187,7 +159,6 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       "Privacy Impact Assessments",
       "Regulatory Strategy",
     ],
-    color: "#7C3AED",
   },
   {
     id: "product",
@@ -200,19 +171,17 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       "Data Analytics",
       "Cross-functional Leadership",
     ],
-    color: "#10B981",
   },
   {
     id: "realestate",
     title: "Real Estate",
     skills: [
-      "Licensed Agent \u2014 New York",
-      "Licensed Agent \u2014 Connecticut",
+      "Licensed Agent -- New York",
+      "Licensed Agent -- Connecticut",
       "Nassau County Specialist",
       "Market Analysis",
       "Client Advisory",
     ],
-    color: "#F59E0B",
   },
 ];
 

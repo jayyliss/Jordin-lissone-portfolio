@@ -10,19 +10,16 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
-      {/* Animated Mesh Background */}
-      <div className="mesh-gradient" />
-
       <Navbar />
-      <main className="relative z-10">
+      <main>
         <Hero />
         <About />
         <Experience />
         <Education />
         <Skills />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

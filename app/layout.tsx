@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const geist = Geist({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter",
+  variable: "--font-geist",
 });
 
 export const metadata: Metadata = {
   title: "Jordin Lissone | Cyber Risk & Data Privacy Professional",
   description:
-    "Portfolio of Jordin Lissone, M.S. - Cyber Risk & Regulatory Associate at PwC specializing in Data Risk & Privacy. Based in New York / Connecticut.",
+    "Portfolio of Jordin Lissone, M.S. -- Cyber Risk & Regulatory Associate at PwC specializing in Data Risk & Privacy. Based in New York / Connecticut.",
   keywords: [
     "Jordin Lissone",
     "Cybersecurity",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jordin Lissone | Cyber Risk & Data Privacy",
     description:
-      "Securing the digital frontier - one risk at a time. Cybersecurity consultant, product strategist, and licensed real estate agent.",
+      "Cybersecurity consultant, product strategist, and licensed real estate agent.",
     type: "website",
   },
 };
@@ -36,7 +36,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={geist.variable}>
       <body className="font-sans antialiased">{children}</body>
     </html>
   );
