@@ -2,7 +2,7 @@ import { SITE_CONFIG } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-divider py-8 mt-8">
+    <footer className="border-t border-divider py-10 mt-4">
       <div className="max-w-content mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
         <p className="text-xs text-secondary">
           &copy; {new Date().getFullYear()} {SITE_CONFIG.name}

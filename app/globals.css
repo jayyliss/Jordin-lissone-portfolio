@@ -8,11 +8,11 @@ html {
 }
 
 body {
-  background: #FAFAF9;
-  color: #111827;
+  background: #FAFAF8;
+  color: #0F0F0F;
 }
 
 ::selection {
-  background: rgba(30, 58, 95, 0.15);
-  color: #111827;
+  background: rgba(27, 79, 216, 0.12);
+  color: #0F0F0F;
 }

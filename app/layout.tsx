@@ -9,23 +9,25 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Jordin Lissone | Cyber Risk & Data Privacy Professional",
+  title: "Jordin Lissone, M.S. | Data Risk & Privacy Professional",
   description:
-    "Portfolio of Jordin Lissone, M.S. -- Cyber Risk & Regulatory Associate at PwC specializing in Data Risk & Privacy. Based in New York / Connecticut.",
+    "Jordin Lissone is a Data Risk & Privacy professional specializing in regulatory compliance, data governance, and privacy risk. Based in New York City.",
   keywords: [
     "Jordin Lissone",
-    "Cybersecurity",
-    "Data Privacy",
+    "Data Risk",
+    "Privacy",
+    "Compliance",
+    "Data Governance",
     "PwC",
-    "Risk Management",
-    "NIST",
-    "GDPR",
-    "CCPA",
+    "DMA",
+    "DSA",
+    "Alation",
+    "OneTrust",
   ],
   openGraph: {
-    title: "Jordin Lissone | Cyber Risk & Data Privacy",
+    title: "Jordin Lissone | Data Risk & Privacy",
     description:
-      "Cybersecurity consultant, product strategist, and licensed real estate agent.",
+      "Data Risk & Privacy professional specializing in regulatory compliance, data governance, and privacy risk across highly regulated industries.",
     type: "website",
   },
 };

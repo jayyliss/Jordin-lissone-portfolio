@@ -9,17 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#FAFAF9",
-        foreground: "#111827",
+        background: "#FAFAF8",
+        foreground: "#0F0F0F",
         secondary: "#6B7280",
-        accent: "#1E3A5F",
+        accent: "#1B4FD8",
         divider: "#E5E7EB",
+        "hero-blue": "#F0F4FF",
       },
       fontFamily: {
-        sans: ["var(--font-geist)", "var(--font-inter)", "system-ui", "sans-serif"],
+        sans: [
+          "var(--font-geist)",
+          "system-ui",
+          "-apple-system",
+          "sans-serif",
+        ],
       },
       maxWidth: {
-        content: "768px",
+        content: "720px",
       },
     },
   },

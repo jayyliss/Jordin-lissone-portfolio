@@ -2,29 +2,29 @@ import { SITE_CONFIG } from "@/lib/data";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-12 sm:py-16">
+    <section id="contact" className="py-24">
       <div className="max-w-content mx-auto px-6">
-        <h2 className="text-sm font-semibold text-secondary uppercase tracking-widest mb-6">
-          Contact
+        <h2 className="text-xs font-semibold text-secondary uppercase tracking-[0.15em] mb-8">
+          Get in Touch
         </h2>
 
-        <p className="text-base text-foreground leading-relaxed mb-4">
-          Interested in discussing cybersecurity strategy, career opportunities,
-          or real estate in the NY/CT area? I&apos;d love to hear from you.
+        <p className="text-base text-foreground/90 leading-relaxed max-w-[540px]">
+          Interested in discussing data governance, privacy, AI risk, or
+          compliance? I am always open to connecting.
         </p>
 
-        <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 text-sm">
+        <div className="mt-6 flex items-center gap-6 text-sm">
           <a
             href={SITE_CONFIG.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-accent hover:text-foreground transition-colors duration-200 underline underline-offset-4 decoration-divider hover:decoration-foreground"
+            className="text-accent hover:underline underline-offset-4 transition-colors duration-200"
           >
             LinkedIn
           </a>
           <a
             href={`mailto:${SITE_CONFIG.email}`}
-            className="text-accent hover:text-foreground transition-colors duration-200 underline underline-offset-4 decoration-divider hover:decoration-foreground"
+            className="text-accent hover:underline underline-offset-4 transition-colors duration-200"
           >
             {SITE_CONFIG.email}
           </a>

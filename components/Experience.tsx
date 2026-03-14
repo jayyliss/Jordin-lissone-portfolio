@@ -2,46 +2,67 @@ import { EXPERIENCES } from "@/lib/data";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-12 sm:py-16">
+    <section id="experience" className="py-24">
       <div className="max-w-content mx-auto px-6">
-        <h2 className="text-sm font-semibold text-secondary uppercase tracking-widest mb-10">
+        <h2 className="text-xs font-semibold text-secondary uppercase tracking-[0.15em] mb-12">
           Experience
         </h2>
 
-        <div className="space-y-10">
-          {EXPERIENCES.map((exp) => (
-            <div key={exp.id}>
-              <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                <div>
-                  <h3 className="text-base font-semibold text-foreground">
-                    {exp.company}
-                  </h3>
-                  <p className="text-sm text-secondary italic">{exp.role}</p>
-                </div>
-                <p className="text-sm text-secondary tabular-nums flex-shrink-0">
-                  {exp.period}
-                </p>
-              </div>
+        <div className="space-y-12">
+          {EXPERIENCES.map((exp, index) => (
+            <div
+              key={exp.id}
+              className={`${
+                index === 0
+                  ? "border-l-2 border-accent pl-5"
+                  : "border-l border-divider pl-5"
+              }`}
+            >
+              {/* Company name */}
+              <h3 className="text-lg font-semibold text-foreground leading-tight">
+                {exp.company}
+              </h3>
 
-              <p className="mt-3 text-sm text-secondary leading-relaxed">
-                {exp.description}
+              {/* Role and department */}
+              <p className="mt-0.5 text-sm text-foreground/80">
+                {exp.role}
+                {exp.department && (
+                  <span className="text-secondary">
+                    {" "}
+                    &middot; {exp.department}
+                  </span>
+                )}
               </p>
 
-              <ul className="mt-3 space-y-1.5">
-                {exp.highlights.map((highlight, i) => (
-                  <li
-                    key={i}
-                    className="text-sm text-foreground/80 leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[0.55em] before:w-1.5 before:h-1.5 before:rounded-full before:bg-divider"
-                  >
-                    {highlight}
-                  </li>
-                ))}
-              </ul>
+              {/* Period + Location */}
+              <p className="mt-1 text-sm text-secondary tabular-nums">
+                {exp.period}
+                {exp.location && (
+                  <span>
+                    {" "}
+                    &middot; {exp.location}
+                  </span>
+                )}
+              </p>
+
+              {/* Highlights */}
+              {exp.highlights.length > 0 && (
+                <ul className="mt-4 space-y-2">
+                  {exp.highlights.map((highlight, i) => (
+                    <li
+                      key={i}
+                      className="text-sm text-foreground/75 leading-relaxed pl-4 relative before:content-[''] before:absolute before:left-0 before:top-[0.6em] before:w-1 before:h-1 before:rounded-full before:bg-secondary/40"
+                    >
+                      {highlight}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
         </div>
 
-        <hr className="mt-12 border-divider" />
+        <hr className="mt-24 border-divider" />
       </div>
     </section>
   );
