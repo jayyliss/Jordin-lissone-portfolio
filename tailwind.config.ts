@@ -9,12 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#FAFAF8",
-        foreground: "#0F0F0F",
-        secondary: "#6B7280",
-        accent: "#1B4FD8",
-        divider: "#E5E7EB",
-        "hero-blue": "#F0F4FF",
+        background: "#1A1007",
+        foreground: "#F5F0E8",
+        secondary: "#A89880",
+        accent: "#C8901E",
+        "accent-light": "#3A2A0E",
+        divider: "#2E2318",
+        "hero-dark": "#1A1007",
+        "hero-text": "#F5F0E8",
+        "hero-muted": "#A89880",
       },
       fontFamily: {
         sans: [

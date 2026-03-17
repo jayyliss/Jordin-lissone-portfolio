@@ -2,21 +2,21 @@ import { NAV_LINKS, SITE_CONFIG } from "@/lib/data";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm border-b border-divider">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-hero-dark/90 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-content mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-sm font-semibold text-foreground tracking-tight"
+          className="text-sm font-semibold text-hero-text tracking-tight"
         >
           {SITE_CONFIG.name}
         </a>
 
-        <ul className="hidden sm:flex items-center gap-7">
+        <ul className="flex items-center gap-5 overflow-x-auto">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-secondary hover:text-foreground transition-colors duration-200"
+                className="text-sm text-hero-muted hover:text-hero-text transition-colors duration-200"
                 style={{ fontSize: "14px" }}
               >
                 {link.label}

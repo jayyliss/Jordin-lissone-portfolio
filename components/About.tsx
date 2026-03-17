@@ -17,7 +17,7 @@ export default function About() {
           {CORE_SKILLS.map((skill) => (
             <span
               key={skill}
-              className="text-xs text-secondary bg-foreground/[0.03] border border-divider rounded-full px-3 py-1"
+              className="text-xs text-secondary bg-white/5 border border-divider rounded-full px-3 py-1"
             >
               {skill}
             </span>
